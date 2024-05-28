@@ -1,2 +1,4 @@
-# BTL-ML-DM
-place to store draft and release.
+# BTL-ML-DM ------- SET UP ENVIRONMENTS:
+
+run: 
+pip install -r + 'path_to_requirement.txt'
