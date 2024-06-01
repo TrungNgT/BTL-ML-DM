@@ -1,11 +1,8 @@
 import cv2
-from ultralytics import YOLO
 from ultralytics.utils.plotting import Annotator
+from choose_model import *
 
 
-detector_model = YOLO('models/pretrained_model/yolov8n_100e.pt')
-
-classifier_model = YOLO('train_process/classifier_model/train_with_FETD/train15epoch/weights/last.pt')
 
 # Open the video file
 # video_path = "choreography.mp4"
@@ -44,7 +41,7 @@ while cap.isOpened():
 
             label = name_dict[prob.top1]
 
-            annotated_frame.box_label([x1, y1, x2, y2], label)
+            annotated_frame.box_label([x1, y1, x2, y2], label, color=(102, 255, 102), txt_color=(255, 0 , 0))
             
 
         # Display the annotated frame

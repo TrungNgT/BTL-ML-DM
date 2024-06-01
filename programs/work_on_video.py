@@ -1,12 +1,9 @@
 import os
-from ultralytics import YOLO
 import numpy as np
 import cv2
 from ultralytics.utils.plotting import Annotator
 
-detector_model = YOLO("yolov8n_100e.pt")
-
-classifier_model = YOLO("last_onfermini.pt")
+from choose_model import *
 
 
 VIDEOS_DIR = os.path.join('.', 'videos')
