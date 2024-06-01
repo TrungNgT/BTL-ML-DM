@@ -4,14 +4,10 @@ import numpy as np
 import cv2
 from ultralytics.utils.plotting import Annotator
 
-model = YOLO("yolov8n_100e.pt")
+detector_model = YOLO("yolov8n_100e.pt")
 
-emotion_classifier = YOLO("last_onfermini.pt")
+classifier_model = YOLO("last_onfermini.pt")
 
-#response = requests.get("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80")
-
-#image = Image.open(BytesIO(response.content))
-#image = np.asarray(image)
 
 VIDEOS_DIR = os.path.join('.', 'videos')
 
@@ -27,13 +23,10 @@ threshold = 0.5
 
 while ret:
 
-    results = model.predict(frame)[0]
+    results = detector_model.predict(frame)[0]
 
     for result in results.boxes:
         x1, y1, x2, y2 = result.xyxy[0]
-
-        #b = result.xyxy[0]
-        #print(b)
 
         h = int(y2 - y1)
         w = int(x2 - x1)
@@ -41,7 +34,7 @@ while ret:
         y = int(y1)
         crop_face = frame[y: y+h, x: x+w]
 
-        emotion = emotion_classifier(crop_face)
+        emotion = classifier_model(crop_face)
 
         name_dict = emotion[0].names
         prob = emotion[0].probs
