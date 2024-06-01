@@ -6,7 +6,7 @@ import cv2
 from ultralytics.utils.plotting import Annotator
 from choose_model import *
 
-image = cv2.imread("future_test/lecture-hall4.jpg")
+image = cv2.imread("future_test/class.jpg")
 
 results = detector_model.predict(image)
 
