@@ -8,7 +8,7 @@ from choose_model import *
 
 VIDEOS_DIR = os.path.join('.', 'videos')
 
-video_path = os.path.join(VIDEOS_DIR, "C:/Users/MSI/Downloads/Facebook 15 Second Video Ads _ Butterfly Wonderland.mp4")
+video_path = os.path.join(VIDEOS_DIR, "future_test/Virgin Atlantic - See the world differently.mp4")
 video_path_out = '{}_out.mp4'.format(video_path)
 
 cap = cv2.VideoCapture(video_path)
