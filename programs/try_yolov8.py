@@ -6,9 +6,9 @@ from io import BytesIO
 import cv2
 from ultralytics.utils.plotting import Annotator
 
-detection_model = YOLO("yolov8n_100e.pt")
+detection_model = YOLO("models/pretrained_model/yolov8n_100e.pt")
 
-classifier_model = YOLO("C:/Users/MSI/runs/classify/train6/weights/train_with20epoches.pt")
+classifier_model = YOLO("train_process/classifier_model/train_with_FETD/train15epoch/weights/last.pt")
 
 
 #response = requests.get("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80")
@@ -16,7 +16,7 @@ classifier_model = YOLO("C:/Users/MSI/runs/classify/train6/weights/train_with20e
 #image = Image.open(BytesIO(response.content))
 #image = np.asarray(image)
 
-image = cv2.imread("C:/Users/MSI/Desktop/c0273995-800px-wm.jpg")
+image = cv2.imread("future_test/behavior_facial_expressions_emotions-100718798-orig.jpg")
 
 results = detection_model.predict(image)
 #print(results[0].boxes.data)
