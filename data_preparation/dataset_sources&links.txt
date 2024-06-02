@@ -1,0 +1,10 @@
+1. Classification task:
+	- FER 2013: [information: https://www.kaggle.com/datasets/msambare/fer2013]
+	- FETD	    [information: https://www.kaggle.com/datasets/noamsegal/affectnet-training-data?select=fear&fbclid=IwZXh0bgNhZW0CMTAAAR3O3o7qWEmFqx8YrQFYhoFvcVUlQITk4Z_pXnco1G8rYwhCJX8Ke7sHmkE_aem_AT7hNKMszaEx6beehQ-KKuoJy9bD4Q3SZMMXZJKzxtZFwRBhmnjN3ZvYTNcexyeOGdZ1kdwMKjzpu4fHTo54oFGh]
+
+2. Detection task:
+	- Wider	    [information: http://shuoyang1213.me/WIDERFACE/]   
+
+3. Dataset storing place:
+	
+https://drive.google.com/drive/folders/1DkfaK_hCq5WyD3PQJPiHPnqkbTgYJYK-?usp=drive_link
