@@ -1,0 +1,8 @@
+path: ../datasets/WIDER_FACE_YOLO
+train: train/images
+val: valid/images
+test: test-dev2017.txt
+
+# Classes
+names:
+  0: person
