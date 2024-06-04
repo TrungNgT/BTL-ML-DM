@@ -1,12 +1,8 @@
-import numpy as np
-from PIL import Image
-import requests
-from io import BytesIO
 import cv2
 from ultralytics.utils.plotting import Annotator
 from choose_model import *
 
-image = cv2.imread("future_test/class.jpg")
+image = cv2.imread("future_test/student_in_class.jpg")
 
 results = detector_model.predict(image)
 

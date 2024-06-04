@@ -47,8 +47,9 @@ video_path = os.path.join(VIDEOS_DIR, "path_to_the_video")
 ## Đối với mục đích huấn luyện thêm mô hình
 - Có thể xem thông tin đánh giá, dữ liệu và lựa chọn pretrained model ở phần [train_process](train_process) và [data_preparation](data_preparation)
 - Đối với nhiệm vụ phân loại (classification task), khuyến nghị chạy file [train](train_process\code) ở môi trường Colab
-<a target="_blank" href="https://colab.research.google.com/drive/14QfCaIClnfSmHjjVkMNoMtZ0MlRhCwr6?usp=sharing">
+<a target="_blank" href="https://drive.google.com/drive/folders/1DkfaK_hCq5WyD3PQJPiHPnqkbTgYJYK-?usp=drive_link">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-- Đối với nhiệm vụ nhận diện gương mặt (face detection task) thì yêu cầu cài đặt thêm: 
+- Đối với nhiệm vụ nhận diện gương mặt (face detection task) thì yêu cầu cài đặt thêm: Một số thư viện để thuận tiện cho việc huấn luyện trên máy cá nhân với tài nguyên GPU.
+Chi tiết thông tin vui lòng xem trong tài liệu báo cáo của nhóm.

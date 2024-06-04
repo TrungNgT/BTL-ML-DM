@@ -1,7 +1,5 @@
 import os
-import numpy as np
 import cv2
-from ultralytics.utils.plotting import Annotator
 
 from choose_model import *
 
